@@ -28,8 +28,10 @@
             </nav>
         </section>
     </main>
-    <footer>
 
-    </footer>
+    <?php
+        $show_socials = true;
+        include 'partials/footer.php'
+    ?>
 </body>
 </html>

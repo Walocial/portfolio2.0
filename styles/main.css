@@ -175,6 +175,10 @@ header {
     z-index: 0;
 }
 
+footer {
+    display: none;
+}
+
 main {
     width: 100%;
     height: 100%;
@@ -742,6 +746,46 @@ h1 {
         top: 45%;
         right: 15%;
     }
+
+    footer {
+        display: block;
+    }
+        .socials_widget_wrapper {
+            position: absolute;
+            bottom: 5dvh;
+            left: 0;
+            display: grid;
+            grid-template-columns: 60px auto;
+            align-items: center;
+            row-gap: 15px;
+        }
+            .social_button {
+                position: relative;
+                width: 60px;
+                height: 60px;
+                background-color: var(--bg-color-alt);
+                align-content: center;
+                text-align: center;
+                font-size: 35px;
+                outline: 4px solid var(--highlight-color-alt);
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+                z-index: 10;
+            }
+            .social_button:hover, .social_button:focus {
+                cursor: pointer;
+                background-color: magenta;
+            }
+            .hover_text {
+                font-size: 25px;
+                padding: 8px 15px;
+                background-color: var(--bg-color-alt);
+                outline: 2px solid var(--chat-selection-color);
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+                transition: 100ms;
+                /* transform: translateX(-100%); */
+            }
 
 
     /*About me (laptop)*/
