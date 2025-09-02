@@ -196,6 +196,23 @@ $(document).ready(function() {
     });
 
 
+    // Stopper normal scrolling, og scroller i stedet gennem infocard-container
+    // Skal nok revurderes, men virker fint.
+    $(window).on('wheel', function (e) {
+        const $container = $('#infoCard-Container');
+
+        if ($container.length) {
+
+            if (!$(e.target).closest('#infoCard-Container').length) {
+            e.preventDefault();
+
+            const speed = 6.5;
+            $container.scrollTop($container.scrollTop() + e.originalEvent.deltaY * speed);
+            }
+        }
+    });
+
+
     //Funktion til at opdatere tekst på et element, med mulighed for at skifte tilbage
     //Element parameter er optionel, men ændrer som default dialogboksens content hvis ikke angivet
     function updateText(displayNewText, newText, element) {
