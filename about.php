@@ -62,8 +62,10 @@
         </section>
 
     </main>
-    <footer>
-
-    </footer>
+    <?php
+        $show_socials = false;
+        $show_to_top = true;
+        include 'partials/footer.php'
+    ?>
 </body>
 </html>

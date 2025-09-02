@@ -175,9 +175,9 @@ header {
     z-index: 0;
 }
 
-footer {
-    display: none;
-}
+/* footer {
+
+} */
 
 main {
     width: 100%;
@@ -300,6 +300,28 @@ h1 {
 }
 .right_btn a:hover, .right_btn a:focus {
     transform: rotate(7deg);
+}
+
+#Scroll_to_top {
+    position: absolute;
+    right: 5dvw;
+    bottom: 5dvh;
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: var(--chat-text-color);
+    background-color: var(--highlight-color-alt);
+    outline: 2px solid var(--chat-text-color);
+    border-radius: 5px;
+    z-index: 100;
+}
+#Scroll_to_top:hover, #Scroll_to_top:active, #Scroll_to_top:focus {
+    outline: 4px solid var(--chat-text-color);
+    background-color: var(--highlight-color);
+    cursor: pointer;
 }
 
 
@@ -524,20 +546,20 @@ h1 {
         display: flex;
         flex-direction: row;
         gap: .5rem;
-        color: var(--text-color-alt-bckg);
+        color: var(--chat-text-color);
         width: min-content;
         height: auto;
         font-size: 20px;
         text-align: center;
         border-radius: 15px;
-        outline: 2px solid var(--text-color-alt-bckg);
+        outline: 2px solid var(--chat-text-color);
         background-color: var(--highlight-color);
         transition: 50ms ease-in-out;
         padding: .5rem .7rem;
     }
     .timeline-recommendation:hover, .timeline-recommendation:active, .timeline-recommendation:focus {
-        outline: 4px solid var(--text-color-alt-bckg);
-        color: var(--text-color-alt-bckg);
+        outline: 4px solid var(--chat-text-color);
+        color: var(--chat-text-color);
     }
 
 
@@ -651,6 +673,12 @@ h1 {
         position: fixed;
         top: 140px;
         left: 25px;
+    }
+
+    #Scroll_to_top {
+        width: 65px;
+        height: 65px;
+        font-size: 35px;
     }
 
     /*About me (tablet)*/

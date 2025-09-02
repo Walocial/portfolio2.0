@@ -14,6 +14,6 @@
     <?php endif; ?>
 
     <?php if ($show_to_top):?>
-        <div id="Scroll_to_top">Tilbage til toppen</div>
+        <div id="Scroll_to_top" tabindex="0" title="Tilbage til toppen"><i class="fas fa-chevron-up"></i></div>
     <?php endif;?>
 </footer>

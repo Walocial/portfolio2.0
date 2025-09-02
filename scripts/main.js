@@ -176,13 +176,25 @@ $(document).ready(function() {
         if ($(this).scrollTop() > 0) {
             resizeHeader('mini');
             $("#aboutMeH1").css({"font-size": "18px", 'margin-top': '0', });
+            $("#Scroll_to_top").fadeIn();
             setSkillLevels();
         } else {
             resizeHeader('default');
             $("#aboutMeH1").css({"font-size": originalSize, 'margin-top': '20px'});
+            $("#Scroll_to_top").fadeOut();
         }
         revealTimelineItems();
     });
+
+    // Scroll til toppen af infocard-Container eller window
+    $('#Scroll_to_top').on("click", function () {
+    const $target = $('#infoCard-Container').length 
+        ? $('#infoCard-Container') 
+        : $('html, body');
+
+    $target.animate({ scrollTop: 0 }, 400);
+    });
+
 
     //Funktion til at opdatere tekst på et element, med mulighed for at skifte tilbage
     //Element parameter er optionel, men ændrer som default dialogboksens content hvis ikke angivet
@@ -203,13 +215,13 @@ $(document).ready(function() {
     });
 
 
-    // Function that selects a hover_text element based on the element hovered
+    // Funktion der vælger et hover_text element baseret på det hoveret element
     function toggleHoverText(element, show) {
         const linkedHoverText = '#' + $(element).attr('id') + '_hover_text';
         $(linkedHoverText).css('transform', show ? 'translateX(0)' : 'translateX(-100%)');
     }
 
-    // toggleHoverText() is used to avoid redeclaring linkedHoverText in both cases 
+    // toggleHoverText() er brugt for at undgå redeklaration af linkedHoverText
     $('.social_button')
     .on("focus mouseenter", function () {
         toggleHoverText(this, true);
