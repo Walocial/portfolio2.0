@@ -772,19 +772,23 @@ h1 {
                 border-top-right-radius: 5px;
                 z-index: 10;
             }
-            .social_button:hover, .social_button:focus {
+            .social_button:hover, .social_button:focus, .social_button:active {
                 cursor: pointer;
-                background-color: magenta;
+                background-color: var(--highlight-color-alt);
             }
             .hover_text {
                 font-size: 25px;
+                width: fit-content;
                 padding: 8px 15px;
                 background-color: var(--bg-color-alt);
                 outline: 2px solid var(--chat-selection-color);
                 border-bottom-right-radius: 10px;
                 border-top-right-radius: 10px;
-                transition: 100ms;
-                /* transform: translateX(-100%); */
+                transition: 150ms;
+                transform: translateX(-100%);
+            }
+            .hover_text>i {
+                margin-left: 8px;
             }
 
 

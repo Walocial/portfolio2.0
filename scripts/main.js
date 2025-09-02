@@ -203,6 +203,20 @@ $(document).ready(function() {
     });
 
 
+    // Function that selects a hover_text element based on the element hovered
+    function toggleHoverText(element, show) {
+        const linkedHoverText = '#' + $(element).attr('id') + '_hover_text';
+        $(linkedHoverText).css('transform', show ? 'translateX(0)' : 'translateX(-100%)');
+    }
+
+    // toggleHoverText() is used to avoid redeclaring linkedHoverText in both cases 
+    $('.social_button')
+    .on("focus mouseenter", function () {
+        toggleHoverText(this, true);
+    })
+    .on("blur mouseleave", function () {
+        toggleHoverText(this, false);
+    });
 
     
     function setSkillLevels() {
