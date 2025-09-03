@@ -52,9 +52,7 @@
                         <div class="horizontalDivider"></div>
                         <?php include 'timeline.php'; ?>
                         <ul class="timeline">
-                            <?php foreach ($timeline as $item): ?>
-                                <?php include 'partials/timelineItem.php'; ?>
-                            <?php endforeach; ?>
+                            <?php include 'partials/timelineItem.php'; ?>
                         </ul>
                     </div>
                 </li>

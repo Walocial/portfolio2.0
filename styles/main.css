@@ -460,19 +460,32 @@ h1 {
     }
 
     .timeline {
-        width: 90%;
+        width: 95%;
         position: relative;
-        display: flex;
+        display: grid;
+        grid-template-columns: 40px auto;
+        row-gap: 15px;
+        /* display: flex;
         flex-direction: column;
-        gap: 2em;
-        border-left: 6px solid var(--chat-bubble-color);
-        padding-left: 40px;
+        gap: 2em; */
+        /* border-left: 6px solid var(--chat-bubble-color);
+        padding-left: 40px; */
+    }
+    .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;   /* stretch to container’s bottom */
+    left: 0;  /* horizontally center within the first col (40px wide) */
+    width: 4px;
+    background: var(--chat-bubble-color);
     }
 
         .timeline *::selection, #landingPageH1::selection {
             background-color: var(--chat-selection-color);
         }
     .timeline-item {
+        grid-column: 2;
         opacity: 0;
         position: relative;
         color: black;
@@ -507,7 +520,7 @@ h1 {
         height: 30px;
         position: absolute;
         top: 15px;
-        left: -58px;
+        left: -53px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -865,6 +878,35 @@ h1 {
 
     .skill {
         position: relative;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr 80px 1fr; /* venstre | linje | højre */
+    }
+
+    .timeline-icon {
+        left: -55px;
+    }
+
+    .timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item:nth-child(odd) {
+        grid-column: 1; /* venstre */
+    }
+    .timeline-item:nth-child(odd)>.timeline-icon {
+        left: unset;
+        right: -55px;
+    }
+    .timeline-item:nth-child(odd)::before {
+        left: unset;
+        right: -10px;
+    }
+
+    .timeline-item:nth-child(even) {
+        grid-column: 3; /* højre */
     }
 
 }
