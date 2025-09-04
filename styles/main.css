@@ -302,6 +302,10 @@ h1 {
     transform: rotate(7deg);
 }
 
+.socials_widget_wrapper {
+    display: none;
+}
+
 #Scroll_to_top {
     position: absolute;
     right: 5dvw;
@@ -465,18 +469,13 @@ h1 {
         display: grid;
         grid-template-columns: 40px auto;
         row-gap: 15px;
-        /* display: flex;
-        flex-direction: column;
-        gap: 2em; */
-        /* border-left: 6px solid var(--chat-bubble-color);
-        padding-left: 40px; */
     }
     .timeline::before {
     content: "";
     position: absolute;
     top: 0;
-    bottom: 0;   /* stretch to container’s bottom */
-    left: 0;  /* horizontally center within the first col (40px wide) */
+    bottom: 0;
+    left: 0;
     width: 4px;
     background: var(--chat-bubble-color);
     }
@@ -498,7 +497,7 @@ h1 {
         z-index: 1;
     }
 
-    .timeline-item::before {
+    .timeline-item::before { /*Lille hvid firkant*/
         width: 20px;
         height: 20px;
         position: absolute;
@@ -530,24 +529,32 @@ h1 {
     }
 
     .timeline-content {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "date"
+        "desc"
+        "skills" 
+        "quote";
         z-index: 1;
     }
-    .timeline-content>h3 {
-        text-align: center;
-    }
-    .timeline-content>p:first-of-type {
-        font-weight: bold;
-        text-align: center;
-    }
+        .timeline-title {
+            grid-area: title;
+        }
+        .timeline-date {
+            grid-area: date;
+            border-bottom: 2px solid black;
+            padding-bottom: 3px;
+        }
+        .timeline-desc {
+            grid-area: desc;
+        }
         .timeline-skills {
             display: flex;
             flex-direction: column;
             gap: 5px;
-            border-top: 2px solid black;
-            padding-top: 5px;
+            grid-area: skills;
         }
         .timeline-skills>ul {
             padding-left: 14px;
@@ -555,14 +562,20 @@ h1 {
         .timeline-skills>ul>li {
             list-style-type: circle;
         }
-    .timeline-recommendation {
+
+    .timeline-quoteblock {
+        display: flex;
+        flex-direction: column;
+        grid-area: quote;
+    }
+    .timeline-reference {
         display: flex;
         flex-direction: row;
         gap: .5rem;
         color: var(--chat-text-color);
-        width: min-content;
+        width: fit-content;
         height: auto;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         border-radius: 15px;
         outline: 2px solid var(--chat-text-color);
@@ -570,7 +583,7 @@ h1 {
         transition: 50ms ease-in-out;
         padding: .5rem .7rem;
     }
-    .timeline-recommendation:hover, .timeline-recommendation:active, .timeline-recommendation:focus {
+    .timeline-reference:hover, .timeline-reference:active, .timeline-reference:focus {
         outline: 4px solid var(--chat-text-color);
         color: var(--chat-text-color);
     }
@@ -724,6 +737,15 @@ h1 {
 
     .skillsWrapper {
         width: 90%;
+    }
+
+    .timeline-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "title title"
+        "date date"
+        "desc desc"
+        "skills quote";
     }
 }
 
