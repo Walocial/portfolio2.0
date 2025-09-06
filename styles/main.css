@@ -838,6 +838,7 @@ h1 {
             .social_button:hover, .social_button:focus, .social_button:active {
                 cursor: pointer;
                 background-color: var(--highlight-color-alt);
+                color: var(--text-color-alt-bckg);
             }
             .hover_text {
                 font-size: 25px;
