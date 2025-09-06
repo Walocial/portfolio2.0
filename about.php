@@ -52,9 +52,7 @@
                         <div class="horizontalDivider"></div>
                         <?php include 'timeline.php'; ?>
                         <ul class="timeline">
-                            <?php foreach ($timeline as $item): ?>
-                                <?php include 'partials/timelineItem.php'; ?>
-                            <?php endforeach; ?>
+                            <?php include 'partials/timelineItem.php'; ?>
                         </ul>
                     </div>
                 </li>
@@ -62,8 +60,10 @@
         </section>
 
     </main>
-    <footer>
-
-    </footer>
+    <?php
+        $show_socials = false;
+        $show_to_top = true;
+        include 'partials/footer.php'
+    ?>
 </body>
 </html>

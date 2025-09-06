@@ -1,29 +1,35 @@
 <?php
 $timeline = [
     [
-        'type' => 'briefcase',
+        'icon' => 'briefcase',
         'title' => 'Praktik - NGAGE',
-        'years' => '2024 - 2024',
+        'date' => '2024 - 2024',
+        'desc' => 'I forbindelse med min professionsbachelor i webudvikling var jeg i praktik hos NGAGE i Vejle, hvor jeg udviklede interne webparts til SharePoint platformen i React, TypeScript og brug af Fluent UI elementer. Som en del af et mindre frontend team arbejede jeg både på egne projekter, men også i fællesskab - hertil brugte vi AzureDevOps til versionsstyring.',
         'skills' => ['React', 'TypeScript', 'Azure DevOps', 'SharePoint Framework (SPFX)'],
-        'rec' => 'assets/downloads/Anbefaling_NGAGE.pdf'
+        'quote' => 'Tobias er en behagelig person at arbejde sammen med.',
+        'cite' => 'Martin - NGAGE',
+        'ref' => 'assets/downloads/Anbefaling_NGAGE.pdf',
     ],
     [
-        'type' => 'user-graduate',
+        'icon' => 'user-graduate',
         'title' => 'Professionsbachelor i webudvikling',
-        'years' => '2023 - 2025',
+        'date' => '2023 - 2025',
+        'desc' => '',
         'skills' => ['JavaScript / jQuery', 'Node.js / Express.js', 'Dataintegration', 'Datasikkerhed', 'UX-Design', 'Git / GitHub', 'MongoDB', 'SQL-Databaser']
     ],
     [
-        'type' => 'briefcase',
+        'icon' => 'briefcase',
         'title' => 'Praktik - Betterclicks',
-        'years' => '2023 - 2023',
-        'skills' => ['SEO-Optimering', 'Linkbuilding (SEO)', 'Wordpress'],
+        'date' => '2023 - 2023',
+        'desc' => '',
+        'skills' => ['SEO-Optimering', 'Linkbuilding', 'Wordpress', 'Søgeordsanalyse', 'Semrush (SEO-værktøj)'],
     ],
     [
-        'type' => 'user-graduate',
+        'icon' => 'user-graduate',
         'title' => 'Multimediedesigner',
-        'years' => '2021 - 2023',
-        'skills' => ['Designprincipper', 'Brugervenlighed', 'Brugeranalyse', 'Tilgængelighed', 'Agilt arbejde']
+        'date' => '2021 - 2023',
+        'desc' => '',
+        'skills' => ['JavaScript', 'Designprincipper', 'Brugervenlighed', 'Brugeranalyse', 'Tilgængelighed', 'Agile arbejdsmetoder']
     ]
 ];
 ?>
