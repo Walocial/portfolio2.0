@@ -588,6 +588,15 @@ h1 {
         color: var(--chat-text-color);
     }
 
+    /*Contact (mobile)*/
+    #contactSection > #infoCard-Container {
+        padding-top: 3em;
+    }
+
+    #socials_grid {
+        display: grid;
+    }
+
 
 /* --------------------- iPad Version -----------------------*/ 
 @media screen and (width >= 725px) {

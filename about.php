@@ -24,7 +24,7 @@
                     </div>
                 </li>
                 <li class="infoCard">
-                    <img class="cardImage" src="assets/media/TobiasKompetencer.webp" alt="">
+                    <img class="cardImage" src="assets/media/TobiasKompetencer.webp" loading="lazy" alt="">
                     <div class="cardInfo">
                         <h2 class="cardTitle">Kompetencer</h2>
                         <div class="horizontalDivider"></div>
@@ -46,7 +46,7 @@
                     </div>
                 </li>
                 <li class="infoCard">
-                    <img class="cardImage" src="assets/media/TobiasCoding.webp" alt="">
+                    <img class="cardImage" src="assets/media/TobiasCoding.webp" loading="lazy" alt="">
                     <div class="cardInfo">
                         <h2 class="cardTitle">Uddannelse & Erfaringer</h2>
                         <div class="horizontalDivider"></div>
