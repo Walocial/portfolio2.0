@@ -1,6 +1,7 @@
 <?php
     $pageTitle = "TjuulM Portefølje | Kontakt";
     $pageDescription = "Skab kontakten - kontakt Tobias Juul Michaelsen på forskellige sociale medier, email eller telefon.";
+    $pageCanonical = "contact";
     include 'partials/header.php';
 ?>
     <main>

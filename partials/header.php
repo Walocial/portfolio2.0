@@ -1,7 +1,8 @@
 <!-- header.php -->
 <?php
     $pageTitle = $pageTitle ?? "TjuulM Portefølje";
-    $pageDescription = $pageDescription ?? "Et portefølje der fremviser Tobias Juul Michaelsen's kompetencer og cases."
+    $pageDescription = $pageDescription ?? "Et portefølje der fremviser Tobias Juul Michaelsen's kompetencer og cases.";
+    $pageCanonical = $pageCanonical ?? "";
 ?>
 <!DOCTYPE html>
 <html lang="da-dk">
@@ -17,13 +18,13 @@
     <!-- Faste meta -->
     <meta name="author" content="Tobias Juul Michaelsen">
     <meta name="keywords" content="Portefølje, webudvikler, Multimediedesigner, Webudvikler Portefølje, portfolio">
-    <link rel="canonical" href="https://tjuulm.dk/">
+    <link rel="canonical" href="https://tjuulm.dk/<?= htmlspecialchars($pageCanonical) ?>">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tjuulm.dk/">
     <meta property="og:title" content="<?= htmlspecialchars($pageTitle) ?>">
     <meta property="og:description" content="<?= htmlspecialchars($pageDescription) ?>">
-    <meta property="og:image" content="assets/media/tjmLogo_default_app.png">
+    <meta property="og:image" content="https://tjuulm.dk/assets/media/tjmLogo_default_app.png">
 
     <!-- CSS + JS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
@@ -32,7 +33,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/age.js" defer></script>
-    <link rel="icon" href="assets/media/tjmLogo_default_app.png" type="image/png">
+    <link rel="icon" href="https://tjuulm.dk/assets/media/tjmLogo_default_app.png" type="image/png">
 </head>
 <body>
     <header>

@@ -1,6 +1,6 @@
 <?php
-    $pageTitle = "TjuulM Portefølje | Forside";
-    $pageDescription = "Et portefølje der fremviser Tobias Juul Michaelsen's som person, samt cases og kompetencer som en uddannet multimediedesigner og webudvikler.";
+    $pageTitle = "Tobias Juul Michaelsen | Webudvikler Portefølje";
+    $pageDescription = "TJuulM er et online webudvikler portefølje der fremviser Tobias Juul Michaelsen's som person, samt cases og kompetencer som en uddannet webudvikler fra Kolding.";
     include 'partials/header.php';
 ?>
     <main>
@@ -12,7 +12,7 @@
                 <ul class="ctaNavigation">
                     <li id="cta_about" class="left_btn link_list_item" data-hovertext="Her kan du lære mig at kende" aria-label="Læs mere om mig"><a href="about.php" data-hovertext="Lær mig at kende">Om mig</a></li>
                     <li id="cta_cases" class="left_btn link_list_item" data-hovertext="Se mine tidligere projekter" aria-label="Se mine cases"><a href="assets/downloads/TobiasJuulMichaelsen_Portefølje_2025.pdf" target="_blank">Cases</a></li>
-                    <li id="cta_CV" class="right_btn link_list_item" data-hovertext="Download en pdf af mit CV" aria-label="Download mit CV"><a href="assets/downloads/TobiasJuulMichaelsenCV-2025.pdf" download>Hent CV<i class="fas fa-download"></i></a></li>
+                    <li id="cta_CV" class="right_btn link_list_item" data-hovertext="Åben en pdf af mit CV" aria-label="Åben mit CV"><a href="assets/downloads/TobiasJuulMichaelsenCV-2025.pdf">Se CV<i class="fas fa-external-link"></i></a></li>
                     <li id="cta_contact" class="right_btn link_list_item" data-hovertext="Klik for at skabe kontakten" aria-label="Kontakt mig"><a href="contact.php">Kontakt mig</a></li>
                 </ul>
             </nav>
@@ -22,7 +22,7 @@
                 <ul class="ctaNavigation">
                     <li class="link_list_item"><a href="assets/downloads/TobiasJuulMichaelsen_Portefølje_2025.pdf">Cases</a></li>
                     <li class="link_list_item"><a href="about.php">Om mig</a></li>
-                    <li class="link_list_item"><a href="assets/downloads/TobiasJuulMichaelsenCV-2024.pdf" download>Hent CV<i class="fas fa-download"></i></a></li>
+                    <li class="link_list_item"><a href="assets/downloads/TobiasJuulMichaelsenCV-2024.pdf">Se CV<i class="fas fa-external-link"></i></a></li>
                     <li class="link_list_item"><a href="contact.php">Kontakt mig</a></li>
                 </ul>
             </nav>

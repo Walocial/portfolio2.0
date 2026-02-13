@@ -2,12 +2,18 @@
 $timeline = [
     [
         'icon' => 'briefcase',
+        'title' => 'Praktik - Saxildhus',
+        'date' => '2025 - 2025',
+        'desc' => '4 ugers praktik som pedelmedhjælper på Saxildhus. Jeg arbejdede med en bred række vedligeholdelsesopgaver. Forløbet styrkede mine kompetencer inden for struktur, ansvar, problemløsning og samarbejde.',
+        'skills' => ['Struktureret opgaveløsning', 'Ansvarlighed', 'Problemløsning', 'Samarbejde', 'Vedligeholdelsesopgaver'],
+        'ref' => 'assets/downloads/Anbefaling_Saxildhus.pdf',
+    ],
+    [
+        'icon' => 'briefcase',
         'title' => 'Praktik - NGAGE',
         'date' => '2024 - 2024',
-        'desc' => 'I forbindelse med min professionsbachelor i webudvikling var jeg i praktik hos NGAGE i Vejle, hvor jeg udviklede interne webparts til SharePoint platformen i React, TypeScript og brug af Fluent UI elementer. Som en del af et mindre frontend team arbejede jeg både på egne projekter, men også i fællesskab - hertil brugte vi AzureDevOps til versionsstyring.',
+        'desc' => 'I forbindelse med min professionsbachelor i webudvikling var jeg i praktik hos NGAGE i Vejle, hvor jeg udviklede interne webparts til SharePoint platformen i React og TypeScript samt brug af Fluent UI elementer.',
         'skills' => ['React', 'TypeScript', 'Azure DevOps', 'SharePoint Framework (SPFX)'],
-        'quote' => 'Tobias er en behagelig person at arbejde sammen med.',
-        'cite' => 'Martin - NGAGE',
         'ref' => 'assets/downloads/Anbefaling_NGAGE.pdf',
     ],
     [
@@ -21,7 +27,7 @@ $timeline = [
         'icon' => 'briefcase',
         'title' => 'Praktik - Betterclicks',
         'date' => '2023 - 2023',
-        'desc' => '',
+        'desc' => 'I forbindelse med min multimediedesigner var jeg i praktik hos Betterclicks i Kolding, hvor jeg SEO-optimerede virksomhedens mange hjemmesider, og skabte intern- og ekstern linkstruktur.',
         'skills' => ['SEO-Optimering', 'Linkbuilding', 'Wordpress', 'Søgeordsanalyse', 'Semrush (SEO-værktøj)'],
     ],
     [

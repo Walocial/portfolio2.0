@@ -1,6 +1,7 @@
 <?php
     $pageTitle = "TjuulM Portefølje | Om mig";
     $pageDescription = "Læs om Tobias Juul Michaelsen som person, hans faglige kompetencer og tidligere erfaringer på Tobias' portefølje.";
+    $pageCanonical = "about";
     include 'partials/header.php';
 ?>
     <main>
